@@ -1,0 +1,7 @@
+---
+- name: Ejecutar una accion en un servidor
+  hosts: "{{ servidor }}"
+  tasks:
+
+    - name: Estoy ejecutando esto en el servidor {{ servidor }}
+      ansible.builtin.command: ip addr show
